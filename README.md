@@ -59,6 +59,7 @@ Oops. Error. Gotta tell those routes explicitly which controller actions will ha
 And to handle our new filtering routes, we'll need to make some changes in our `authors_controller` to actually do the work.
 
 ```ruby
+# app/controllers/authors_controller.rb
   def posts_index
     @author = Author.find(params[:id])
     @posts = @author.posts
@@ -266,3 +267,5 @@ Nesting resources is a powerful tool that helps you keep your routes neat and ti
 However, as a general rule, you should only nest resources one level deep and ensure that you are considering Separation of Concerns in your routing.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/routing-nested-resources-reading'>Routing and Nested Resources</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/routing-nested-resources-reading'>Routing and Nested Resources</a> on Learn.co and start learning to code for free.</p>
