@@ -219,9 +219,9 @@ In `posts/index.html.erb`, we already show the author's name, so let's add a lin
 
   ...
 ```
-Let's reload `/posts` and click on an author name. We should be taken to `/author/id/posts`.
+Let's reload `/posts` and click on an author name. We should be taken to `/authors/id/posts`.
 
-Great! Now our URLs properly reflect the relationship of our resources and read almost like an English sentence: `author/1/posts` = "author number one's posts."
+Great! Now our URLs properly reflect the relationship of our resources and read almost like an English sentence: `authors/1/posts` = "author number one's posts."
 
 Sometimes people get confused by path helpers and what they take as arguments. For example, why does `posts_path` not take an argument, but `post_path(@post)` does? `posts_path` refers to all of the posts, so we're not talking about a specific post (no specific ID). When we're looking at the `post_path`, we're referring to a specific post, and the Rails helper needs to know *which* post so that it can generate the proper url, e.g., `posts/1` as opposed to `posts/2`.
 
