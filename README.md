@@ -174,9 +174,9 @@ If we want to get to the `/authors` page, we know the URL helpers are `authors_p
 
 So what if we want to get to all posts nested under an author?
 
-We know the URL is `/authors/:author_id/posts`, so we can combine the two conventions and use `author_posts(author_id)`. Remember it's the singular `author` because we are getting one by `id`.
+We know the URL is `/authors/:author_id/posts`, so we can combine the two conventions and use `author_posts_path(author_id)`. Remember it's the singular `author` because we are getting one by `id`.
 
-It stands to reason that a single post for an author would combine the conventions for the single author path and single post path, leaving us with `author_post(author_id, post_id)`.
+It stands to reason that a single post for an author would combine the conventions for the single author path and single post path, leaving us with `author_post_path(author_id, post_id)`.
 
 Once you become accustomed to breaking it down in that way, it's pretty straightforward to know what our URL helpers will be for a nested route. However, if you're not sure, or if you just want to double-check, you can use `rake routes` on the command line to get a printout of all your named routes, like this:
 
