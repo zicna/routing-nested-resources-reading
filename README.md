@@ -249,7 +249,7 @@ resources :authors do
 end
 ```
 
-Now we're getting into messy territory. Our `comments_path` helper is now `author_post_comments_path`, our URL is `/authors/1/posts/1/comments`, and we have to handle for that filtering in our controller.
+Now we're getting into messy territory. Our `comments_path` helper is now `author_post_comments_path`, our URL is `/authors/1/posts/1/comments`, and we have to handle that filtering in our controller.
 
 But if we lean on our old friend Separation of Concerns, we can conclude that a post's comments are not the concern of an author and therefore don't belong nested two levels deep under the `:authors` resource.
 
@@ -267,5 +267,3 @@ Nesting resources is a powerful tool that helps you keep your routes neat and ti
 However, as a general rule, you should only nest resources one level deep and ensure that you are considering Separation of Concerns in your routing.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/routing-nested-resources-reading'>Routing and Nested Resources</a> on Learn.co and start learning to code for free.</p>
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/routing-nested-resources-reading'>Routing and Nested Resources</a> on Learn.co and start learning to code for free.</p>
