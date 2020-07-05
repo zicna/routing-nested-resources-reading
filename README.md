@@ -265,3 +265,4 @@ In addition, the reason to put the ID of the resource in the URL is so that we h
 Nesting resources is a powerful tool that helps you keep your routes neat and tidy and is better than dynamic route segments for representing parent/child relationships in your system.
 
 However, as a general rule, you should only nest resources one level deep and ensure that you are considering Separation of Concerns in your routing.
+
